@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SerialTest",
+            "request": "launch",
+            "mainClass": "com.ALuniv25.MotionLighting.ReadingData.SerialTest",
+            "projectName": "MotionLighting"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ArduinoConnection2",
+            "request": "launch",
+            "mainClass": "com.ALuniv25.MotionLighting.ReadingData.ArduinoConnection2",
+            "projectName": "MotionLighting"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MotionLightingApplication<MotionLighting>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.ALuniv25.MotionLighting.MotionLightingApplication",
+            "projectName": "MotionLighting",
+            "args": ""
+        }
+    ]
+}

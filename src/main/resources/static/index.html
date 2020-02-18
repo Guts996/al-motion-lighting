@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello WebSocket</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="/main.css" rel="stylesheet">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/app.js"></script>
+</head>
+
+<body>
+    <noscript><h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websocket relies on Javascript being
+    enabled. Please enable
+    Javascript and reload this page!</h2></noscript>
+    <div id="main-content" class="container">
+
+        <div class="card">
+            <h5 class="card-header">Realtime Sensor Data Flow :</h5>
+            <div class="card-body">
+                <h1 class="card-title" id="greetings"> State : Not Connected </h3>
+                    <div style="padding-bottom: 10px;">
+                        <h3 id="motion"> Not Connected Motion Sensor </h3>
+                        <h3 id="light"> Not Connected Light Sensor</h3>
+                        <h3 id="led"> Not Connected Led Sensor</h3>
+                    </div>
+                    <button id="connect" class="btn btn-primary" type="submit">Connect</button>
+                    <button id="disconnect" class="btn btn-danger" type="submit" disabled="disabled">Disconnect</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
